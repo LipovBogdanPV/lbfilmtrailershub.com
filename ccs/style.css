@@ -1,0 +1,244 @@
+body{
+    position: relative;
+    background-color: #1e1e1e;
+    margin: 0;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow-x: hidden;
+    height: auto;
+}
+.z-index{
+    position: fixed;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar-menu li{
+    display: inline-block;
+}
+.navbar-menu li a{
+    display: inline-block;
+}
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.callback{
+    margin-left: 30px;
+    padding: 10px 30px;
+    background-color: coral;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(255, 127, 80, .3);
+    transition: all .7 ease-in-out;
+}
+.callback:hover{
+    transform: scale(1.04);
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 9px 9px rgba(255, 127, 80, .3);
+}
+.navbar-brand{
+    color: transparent;
+    background-image: linear-gradient(90deg, #FFE600 46.21%, #0500FF 54.92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all .8 ease;
+}
+.navbar-brand:hover{
+    color: transparent;
+    background-image: linear-gradient(180deg, #FFE600 46.21%, #0500FF 54.92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar-menu li a{
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(180deg, #FFE600 46.21%, #0500FF 54.92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .7 ease-in-out;
+}
+.navbar-menu li a:hover{
+    opacity: 1;
+    
+}
+.navbar-toggler{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .navbar-toggler{
+        display:;
+    }
+    .navbar-wrap{
+        display: none;
+    }
+}
+.search input{
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+}
+.search input:active{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+}
+form{
+    width: 400px;
+    margin: 0 40px 0 90px;
+}
+
+/*
+body{
+    background-color: #1e1e1e;
+    margin: 0;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+p, h1{
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+form{
+    width: 577px;
+    margin: 0 40px 0 90px;
+
+}
+section{
+    position: sticky;
+}
+a{
+    text-decoration: none;
+}
+/*   
+.logo>a{
+    color: transparent;
+    background-image: linear-gradient(90deg, #FFE600 46.21%, #0500FF 54.92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 16px;
+}
+.navbar{
+    display: flex;
+}
+.form-control{
+    background-color:transparent;
+    color: #fff;
+    border-image: linear-gradient(180deg, #FFE600 0%, #0500FF 100%);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.z-index{
+    position: fixed;
+}
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, 0.555);
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+.nav-link{
+    color: transparent;
+    background-image: linear-gradient(180deg, #FFE600 0%, #0500FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+    font-size: 16px;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+.login>div>a{
+    margin-left: 40px;
+    color: transparent;
+    background-image: linear-gradient(180deg, #FFE600 0%, #0500FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container>h1{
+    text-align: center;
+}
+.flex-column{
+    display: flex;
+    align-items: center
+}
+.flex-column>p{
+    width: 236px;
+    margin: 0 0 0 55px;
+    text-align: center;
+}
+.container{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.liner{
+    position: relative;
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0);
+    border-radius: 4px;
+    top: 15px;
+}
+.card{
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0);
+    width: 155px;
+    height: 160px;
+    margin-bottom: 30px;
+}
+.circle>p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    bottom: 3px;
+    
+}
+.circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    background: #000000;
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+  }
+  .col{
+    padding: 0;
+  }*/
